@@ -26,8 +26,8 @@ public class TestMain {
         assertEquals(2, numberOfResults(textSearchResult, "Christopher"));
         assertEquals(55, numberOfResults(textSearchResult, "Daniel"));
         assertEquals(15, numberOfResults(textSearchResult, "Paul"));
-        assertEquals(4, numberOfResults(textSearchResult, "Mark"));
-        assertEquals(4, numberOfResults(textSearchResult, "Donald"));
+        assertEquals(2, numberOfResults(textSearchResult, "Mark"));
+        assertEquals(0, numberOfResults(textSearchResult, "Donald"));
         assertEquals(143, numberOfResults(textSearchResult, "George"));
         assertEquals(1, numberOfResults(textSearchResult, "Kenneth"));
         assertEquals(0, numberOfResults(textSearchResult, "Steven"));

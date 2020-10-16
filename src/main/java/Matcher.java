@@ -160,6 +160,10 @@ public final class Matcher {
             return false;
         }
 
+        if (startPosition >= 1 && Character.isLetter(text.charAt(startPosition - 1))) {
+            return false;
+        }
+
         for (int j = 0; j < pattern.length(); j++) {
             if (pattern.charAt(j) != text.charAt(startPosition + j))
                 return false;
